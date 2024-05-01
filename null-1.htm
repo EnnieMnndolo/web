@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html> 
+    <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="Viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+<script type="text/javascript" src="./popup.js"></script>
+    <style>
+            #footer{
+                color: aliceblue;
+                margin-left: 2px;
+                padding-left: 2px;
+                font-size: x-large;
+                
+            }
+       
+        a:hover {
+            text-decoration: underline;
+            color: white;
+          }
+        </style>
+    </head>
+    <body>
+        <div id="top">        <h1>
+             MUBAS UNITED CHRISTIAN CONGRAGATION<br>(UCC)         </h1>  <nav id="navigation"> <a href="#navigation" id="home">home</a> <a href="#navigation">login</a> </nav>
+            </div>
+           
+
+                 <form action="logconnect.php" method="post">
+                    <div id="email_cover">
+                        <label for="email">email</label>     <input type="email" id="email" class="form-control" name="username" placeholder="Enter student email" required> 
+
+                    </div>
+                    <div id="password_cover">                    <label for="password">password</label>        <input type="password" id="password" class="form-control" name="password" placeholder="Enter password" maxlength="10" required> 
+                    </div>   
+                
+                <input type="submit" class="btn btn-primary" value="login" name="login">  
+
+                <div class="new_user">  Click     <a href="UCCRegister.php" style=" ">New User</a>         
+
+     if you are a new user
+                                        
+                </div>
+                    </div>
+                </form>  
+ 
+
+    <div id="footer" style="color: aliceblue;">This system is specifically for MUBAS UCC Students ssssssss
+  </div>
+    </body>
+</html>
+        

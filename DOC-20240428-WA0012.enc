@@ -1,0 +1,39 @@
+<?php
+session_start();
+
+// Database connection
+$con = mysqli_connect("localhost", "root", "", "ucc");
+
+// Check connection
+if (mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    exit();
+}
+
+// Check if form is submitted
+if(isset($_POST['username'], $_POST['password'])) {
+    // Retrieve form data
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Sanitize user input
+    $username = mysqli_real_escape_string($con, $username);
+    $password = mysqli_real_escape_string($con, $password);
+
+    // Query to check if user exists with given credentials
+    $query = mysqli_query($con, "SELECT * FROM uccc WHERE username ='$username' AND password ='$password'");
+    $row = mysqli_fetch_assoc($query);
+
+    // If user exists, set session and redirect to index.php
+    if(mysqli_num_rows($query) > 0) {
+        // $_SESSION['username'] = $row['username'];
+        // header("Location: index.php");
+        echo"logged in";
+        exit();
+    } else {
+        // If user doesn't exist, show error message
+        // echo "<script>alert('Invalid username or password');</script>";
+echo "damn";
+    }
+}
+

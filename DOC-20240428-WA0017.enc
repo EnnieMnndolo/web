@@ -1,0 +1,43 @@
+<?php
+session_start();
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+// Database connection parameters
+$servername = "localhost";
+$email = "root";
+$password ="";
+$database = "register";
+//Creating connection
+$conn = new mysqli('localhost', 'root', '', 'register');
+//check connection
+if ($conn->connect_error) {
+    die("Connection Failed : " .$conn->connect_error);
+}
+
+// Form submission handling
+if ($_SERVER["REQUEST_METHOD"] =="POST") {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    //SQL injection prevention
+    $username = mysqli_real_escape_string($conn, $email);
+    $password = mysqli_real_escape_string($conn, $password);
+    //SQL query to fetch the information of registerd users
+    $query = "SELECT * FROM users WHERE  email = '$email' AND password = '$password'";
+    $result = mysqli_query($conn, $query);
+    //Check query returns any rows
+ if (mysqli_num_rows($result) ==1) {
+        $_SESSION['login_user'] = $username;
+        header("location: VOTESYSTEM.php");
+        echo("hallo");
+        exit;
+
+    } else {
+        //Invalid username or password
+        $error = "Invalid email or password";
+        echo($error . mysqli_error($conn));
+
+    }
+}
+?>

@@ -1,0 +1,25 @@
+async function copy_link() {
+    let share_buttons =  document.querySelectorAll(".share_button")
+
+share_buttons.forEach(share_button => {
+    share_button.addEventListener("click",()=>{
+   navigator.clipboard.writeText("http://localhost/UCCRegister.html").then(()=>{
+    console.log( share_button.lastChild.src)
+    setTimeout(() => {
+        
+        document.querySelector("#text").textContent="link coppied"
+        share_button.lastChild.src="./web_icons/check.svg"
+  setTimeout(() => {
+    share_button.lastChild.src="./web_icons/copy.svg"
+    document.querySelector("#text").textContent="copy link"
+
+  }, 2000);
+    },500);
+   })
+    })
+});
+}
+
+document.addEventListener("DOMContentLoaded",()=>{
+    copy_link()
+})

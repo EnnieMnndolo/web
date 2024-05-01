@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body{
+      background-color: #06648a;
+    }
+    /* Form Container */
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    /* Form Headings */
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Form Labels */
+    .form-container label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    /* Form Inputs */
+    .form-container input[type="text"],
+    .form-container input[type="password"],
+    .form-container input[type="submit"] {
+      width: calc(100% - 22px); /* Adjust for input padding and border */
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    /* Submit Button */
+    .form-container input[type="submit"] {
+      width: 100%; /* Full width */
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+
+    .form-container input[type="submit"]:hover {
+      background-color: #06648a;
+    }
+
+    /* Optional: Error Messages */
+    .error-message {
+      color: red;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2 style="color: #06648a;">Enter your credentials</h2>
+        <form method="POST" action="login.php">
+            <label for="username" style="color: #06648a;">Username:</label><br>
+            <input type="text" name="username" placeholder="Enter username" required><br><br>
+            
+            <label for="password" style="color: #06648a;">Password:</label><br>
+            <input type="password" name="password" placeholder="Enter password" required><br><br>
+            
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
+
+    <?php
+      // PHP code for login processing
+      session_start();
+
+      if(isset($_POST['username'], $_POST['password'])) {
+        // Database connection parameters
+        $host = "localhost"; // Change this if your database server is hosted elsewhere
+        $username = "root"; // Change this to your database username
+        $password = ""; // Change this to your database password
+        $database = "ucc"; // Change this to the name of your database
+        $table = "uccc"; // Change this to the name of your table
+
+        // Establish database connection
+        $con = mysqli_connect($host, $username, $password, $database);
+
+        // Check connection
+        if (mysqli_connect_errno()) {
+          echo "Failed to connect to MySQL: " . mysqli_connect_error();
+          exit();
+        }
+
+        // Retrieve form data
+        $username = mysqli_real_escape_string($con, $_POST['username']);
+        $password = mysqli_real_escape_string($con, $_POST['password']);
+
+        // Query to check if user exists with given credentials
+        $query = mysqli_query($con, "SELECT * FROM $table WHERE username='$username' AND password='$password'");
+
+        // If user exists, set session and redirect to index.php
+        if(mysqli_num_rows($query) > 0) {
+          $_SESSION['username'] = $username;
+          mysqli_close($con);
+          header('Location: http://localhost/index.php');
+          exit();
+      } else {
+          // If user doesn't exist, show error message
+          echo "<script>alert('Invalid username or password');</script>";
+      }
+  
+      // Close the database connection
+      mysqli_close($con);
+  }
+        
+
+?>
+  

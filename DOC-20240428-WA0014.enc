@@ -1,0 +1,28 @@
+<?php
+// Establish database connection
+$con = mysqli_connect("localhost", "root", "", "ucc");
+
+// Check connection
+if (mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    exit();
+}
+
+if(isset($_POST['submit'])) {
+    // Retrieve form data
+    $username = $_POST['username'];
+    $fullname = $_POST['fullname'];
+    $gender = $_POST['gender'];
+    $regnumber = $_POST['regnumber'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Insert data into database
+    $query = mysqli_query($con, "INSERT INTO uccc (username, fullname, gender, regnumber, email, password) VALUES ('$username', '$fullname', '$gender', '$regnumber', '$email', '$password')");
+
+    if($query){
+        echo "<script>alert('Data inserted successfully');</script>";
+    } else {
+        echo "<script>alert('There is an error');</script>";
+    }
+}

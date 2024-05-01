@@ -1,0 +1,24 @@
+async function submit_register() {
+    document.querySelector
+}
+
+fetch(" http://127.0.0.1:80/connect.php"
+// ,{
+//     method: "POST",
+//     mode : "no-cors",
+//     credentials :"include",
+//     headers:{
+//         "Content-Type": "application/json"
+//     }
+//         ,
+//     body: JSON.stringify({username:"alice",fullname:"alice",regNumber: "6",email : "opopop", password:"bubva"})
+// }
+ ).then(response =>  response.text()
+
+      // → 200
+    // console.log(response.headers.get("Content-Type"));
+    // → text/plain
+    ).then(content=>
+        console.log(content)
+    );
+    

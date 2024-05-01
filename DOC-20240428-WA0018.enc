@@ -1,0 +1,38 @@
+
+async function popup_form() {
+    
+    let login_button= await document.querySelector("nav button");
+    let close_button = await document.querySelector("#close_button")
+    let form=  document.querySelector("#login_form");
+
+login_button.addEventListener("click",()=>{
+if (form.classList.contains("display_flex")) {
+    hide_form()
+
+
+} else {
+    setTimeout(() => {
+        
+        form.classList.remove("display_none");
+        form.classList.add("display_flex");
+        }, 200);
+}
+});
+close_button.addEventListener("click", ()=>{
+    hide_form()
+
+})
+}
+async function hide_form() {
+     let form=  document.querySelector("#login_form");
+    setTimeout(() => {
+        
+        form.classList.add("display_none");
+        form.classList.remove("display_flex");
+          }, 200);
+}
+popup_form()
+// document.addEventListener("DOMContentLoaded",() => {
+//      popup_form()
+// })
+

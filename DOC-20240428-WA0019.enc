@@ -1,0 +1,590 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./popup.js" defer></script>
+    <script src="./popup.js" defer></script>
+    <script src="./copy_link.js" defer></script>
+    <script>
+        function validateLogin() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            if (email === "admin" && password === "password") {
+                alert("Login successful!");
+                return true;
+            } else {
+                alert("Invalid email adress or password. Please try again");
+                return false;
+            }
+        }
+        </script>
+<script type="text/javascript" src="./popup.js"></script>
+    <style>
+        /* #top{
+        position:fixed;
+        z-index: 1;
+        padding: 10px;
+        background-color: #66cd4f; 
+        border-radius: 0px 0 0 15px;
+       
+        background-color: #EEEEEE;
+    
+    }   */
+    </style>
+</head>
+
+<body>
+    <nav id="top">
+        <span id="logo">ucc <img src="./UCC.svg" alt="ucc logo"></span>
+        <ul id="nav_links">
+            <li><a href="#top"> services </a> <img src="./svgs/solid/book-bible.svg" alt=""></li>
+            <li><a href="#top">streaming</a> <img src="./svgs/solid/eye.svg" alt=""></li>
+            <li><a href="vote.html"> elections </a><img src="./svgs/solid/check-to-slot.svg" alt=""></li>
+            <li><a href="About.html">about </a><img src="./svgs/solid/question.svg" alt=""></li>
+        </ul> <button>login <img src="./svgs/solid/login.svg" alt="user"></button>
+    </nav>
+    <!-- <span id="posts_header">calendar &nbsp;<img id="fire" src="./svgs/solid/calendar-week.svg" alt=""></span> -->
+    <div id="opening"> <img src="./UCC.svg" alt=""> <span id="welcome">welcome to united chritian congregation <br>(UCC)</span></div>  
+    <div id="second_row"> <span id="posts_header">upcoming events &nbsp;<img id="fire" src="./svgs/solid/fire.svg"
+                alt=""></span>
+        <span id="articles_header"> blogs and articles &nbsp; <img src="./svgs/solid/book-open.svg" alt=""></span>
+    </div>
+    <div id="main_content">
+        <div id="posts">
+            <div class="post">
+                <img class="post_image" src="./abusa.jpg" alt="post image" srcset="">
+                <div class="post_content">
+
+                    <span class="post_title">easter conference : it is finished</span>
+                    <span class="post_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                        reprehenderit, quibusdam nemo quia eveniet autem repudiandae officia quidem illum blanditiis
+                        provident libero culpa atque quaerat possimus minima. Possimus, animi laborum.</span>
+                    <span class="date_time"> <span class="director">happening on :</span> 1 april 2024</span> <span
+                        class="post_like"><span class="like">Like</span> <img class="fire" src="./svgs/solid/fire.svg"
+                            alt=""></span>
+                    <span class="share_button"> <span>copy link</span> <img class="copy_icon" height="20px" width="20px"
+                            src="./svgs/regular/copy.svg" alt="share"></span>
+
+                </div>
+                
+            </div>
+         
+        </div>
+        <div id="articles">
+
+            <div class="article">
+                <img src="./Small boy.jpg" alt="">
+                <span class="article_title">30 Biblical Ways To Raise Godly Children</span>
+                <span class="article_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est
+                    minima, officiis quo </span>
+
+                <div class="article_bottom">
+                    <span class="article_like"><span class="like">Like</span> <img class="fire"
+                            src="./svgs/solid/fire.svg" alt=""></span>
+                    <span class="article_share"><span class="share">Share</span> <img src="./svgs/solid/share-nodes.svg"
+                            alt=""></span>
+                    <span class="article_date"> <img src="./svgs/solid/clock-rotate-left.svg" alt=""> <span
+                            class="date">3 days ago</span> </span>
+                </div>
+            </div>
+        </div>
+        <div id="posts">
+            <div class="post">
+                <img class="post_image" src="./abusa.jpg" alt="post image" srcset="">
+                <div class="post_content">
+
+                    <span class="post_title">easter conference : it is finished</span>
+                    <span class="post_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                        reprehenderit, quibusdam nemo quia eveniet autem repudiandae officia quidem illum blanditiis
+                        provident libero culpa atque quaerat possimus minima. Possimus, animi laborum.</span>
+                    <span class="date_time"> <span class="director">happening on :</span> 1 april 2024</span> <span
+                        class="post_like"><span class="like">Like</span> <img class="fire" src="./svgs/solid/fire.svg"
+                            alt=""></span>
+                    <span class="share_button"> <span>copy link</span> <img class="copy_icon" height="20px" width="20px"
+                            src="./svgs/regular/copy.svg" alt="share"></span>
+
+                </div>
+                
+            </div>
+         
+        </div>
+        <div id="articles">
+
+            <div class="article">
+                <img src="./Small boy.jpg" alt="">
+                <span class="article_title">30 Biblical Ways To Raise Godly Children</span>
+                <span class="article_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est
+                    minima, officiis quo </span>
+
+                <div class="article_bottom">
+                    <span class="article_like"><span class="like">Like</span> <img class="fire"
+                            src="./svgs/solid/fire.svg" alt=""></span>
+                    <span class="article_share"><span class="share">Share</span> <img src="./svgs/solid/share-nodes.svg"
+                            alt=""></span>
+                    <span class="article_date"> <img src="./svgs/solid/clock-rotate-left.svg" alt=""> <span
+                            class="date">3 days ago</span> </span>
+                </div>
+            </div>
+        </div>
+        <div id="posts">
+            <div class="post">
+                <img class="post_image" src="./abusa.jpg" alt="post image" srcset="">
+                <div class="post_content">
+
+                    <span class="post_title">easter conference : it is finished</span>
+                    <span class="post_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                        reprehenderit, quibusdam nemo quia eveniet autem repudiandae officia quidem illum blanditiis
+                        provident libero culpa atque quaerat possimus minima. Possimus, animi laborum.</span>
+                    <span class="date_time"> <span class="director">happening on :</span> 1 april 2024</span> <span
+                        class="post_like"><span class="like">Like</span> <img class="fire" src="./svgs/solid/fire.svg"
+                            alt=""></span>
+                    <span class="share_button"> <span>copy link</span> <img class="copy_icon" height="20px" width="20px"
+                            src="./svgs/regular/copy.svg" alt="share"></span>
+
+                </div>
+                
+            </div>
+         
+        </div>
+        <div id="articles">
+
+            <div class="article">
+                <img src="./Small boy.jpg" alt="">
+                <span class="article_title">30 Biblical Ways To Raise Godly Children</span>
+                <span class="article_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est
+                    minima, officiis quo </span>
+
+                <div class="article_bottom">
+                    <span class="article_like"><span class="like">Like</span> <img class="fire"
+                            src="./svgs/solid/fire.svg" alt=""></span>
+                    <span class="article_share"><span class="share">Share</span> <img src="./svgs/solid/share-nodes.svg"
+                            alt=""></span>
+                    <span class="article_date"> <img src="./svgs/solid/clock-rotate-left.svg" alt=""> <span
+                            class="date">3 days ago</span> </span>
+                </div>
+            </div>
+        </div>
+        <div id="posts">
+            <div class="post">
+                <img class="post_image" src="./abusa.jpg" alt="post image" srcset="">
+                <div class="post_content">
+
+                    <span class="post_title">easter conference : it is finished</span>
+                    <span class="post_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                        reprehenderit, quibusdam nemo quia eveniet autem repudiandae officia quidem illum blanditiis
+                        provident libero culpa atque quaerat possimus minima. Possimus, animi laborum.</span>
+                    <span class="date_time"> <span class="director">happening on :</span> 1 april 2024</span> <span
+                        class="post_like"><span class="like">Like</span> <img class="fire" src="./svgs/solid/fire.svg"
+                            alt=""></span>
+                    <span class="share_button"> <span>copy link</span> <img class="copy_icon" height="20px" width="20px"
+                            src="./svgs/regular/copy.svg" alt="share"></span>
+
+                </div>
+                
+            </div>
+         
+        </div>
+        <div id="articles">
+
+            <div class="article">
+                <img src="./Small boy.jpg" alt="">
+                <span class="article_title">30 Biblical Ways To Raise Godly Children</span>
+                <span class="article_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est
+                    minima, officiis quo </span>
+
+                <div class="article_bottom">
+                    <span class="article_like"><span class="like">Like</span> <img class="fire"
+                            src="./svgs/solid/fire.svg" alt=""></span>
+                    <span class="article_share"><span class="share">Share</span> <img src="./svgs/solid/share-nodes.svg"
+                            alt=""></span>
+                    <span class="article_date"> <img src="./svgs/solid/clock-rotate-left.svg" alt=""> <span
+                            class="date">3 days ago</span> </span>
+                </div>
+            </div>
+        </div>
+        <div id="posts">
+            <div class="post">
+                <img class="post_image" src="./abusa.jpg" alt="post image" srcset="">
+                <div class="post_content">
+
+                    <span class="post_title">easter conference : it is finished</span>
+                    <span class="post_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                        reprehenderit, quibusdam nemo quia eveniet autem repudiandae officia quidem illum blanditiis
+                        provident libero culpa atque quaerat possimus minima. Possimus, animi laborum.</span>
+                    <span class="date_time"> <span class="director">happening on :</span> 1 april 2024</span> <span
+                        class="post_like"><span class="like">Like</span> <img class="fire" src="./svgs/solid/fire.svg"
+                            alt=""></span>
+                    <span class="share_button"> <span>copy link</span> <img class="copy_icon" height="20px" width="20px"
+                            src="./svgs/regular/copy.svg" alt="share"></span>
+
+                </div>
+                
+            </div>
+         
+        </div>
+        <div id="articles">
+
+            <div class="article">
+                <img src="./Small boy.jpg" alt="">
+                <span class="article_title">30 Biblical Ways To Raise Godly Children</span>
+                <span class="article_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est
+                    minima, officiis quo </span>
+
+                <div class="article_bottom">
+                    <span class="article_like"><span class="like">Like</span> <img class="fire"
+                            src="./svgs/solid/fire.svg" alt=""></span>
+                    <span class="article_share"><span class="share">Share</span> <img src="./svgs/solid/share-nodes.svg"
+                            alt=""></span>
+                    <span class="article_date"> <img src="./svgs/solid/clock-rotate-left.svg" alt=""> <span
+                            class="date">3 days ago</span> </span>
+                </div>
+            </div>
+        </div>
+        <div id="posts">
+            <div class="post">
+                <img class="post_image" src="./abusa.jpg" alt="post image" srcset="">
+                <div class="post_content">
+
+                    <span class="post_title">easter conference : it is finished</span>
+                    <span class="post_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                        reprehenderit, quibusdam nemo quia eveniet autem repudiandae officia quidem illum blanditiis
+                        provident libero culpa atque quaerat possimus minima. Possimus, animi laborum.</span>
+                    <span class="date_time"> <span class="director">happening on :</span> 1 april 2024</span> <span
+                        class="post_like"><span class="like">Like</span> <img class="fire" src="./svgs/solid/fire.svg"
+                            alt=""></span>
+                    <span class="share_button"> <span>copy link</span> <img class="copy_icon" height="20px" width="20px"
+                            src="./svgs/regular/copy.svg" alt="share"></span>
+
+                </div>
+                
+            </div>
+         
+        </div>
+        <div id="articles">
+
+            <div class="article">
+                <img src="./Small boy.jpg" alt="">
+                <span class="article_title">30 Biblical Ways To Raise Godly Children</span>
+                <span class="article_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est
+                    minima, officiis quo </span>
+
+                <div class="article_bottom">
+                    <span class="article_like"><span class="like">Like</span> <img class="fire"
+                            src="./svgs/solid/fire.svg" alt=""></span>
+                    <span class="article_share"><span class="share">Share</span> <img src="./svgs/solid/share-nodes.svg"
+                            alt=""></span>
+                    <span class="article_date"> <img src="./svgs/solid/clock-rotate-left.svg" alt=""> <span
+                            class="date">3 days ago</span> </span>
+                </div>
+            </div>
+        </div>        <div id="posts">
+            <div class="post">
+                <img class="post_image" src="./abusa.jpg" alt="post image" srcset="">
+                <div class="post_content">
+
+                    <span class="post_title">easter conference : it is finished</span>
+                    <span class="post_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                        reprehenderit, quibusdam nemo quia eveniet autem repudiandae officia quidem illum blanditiis
+                        provident libero culpa atque quaerat possimus minima. Possimus, animi laborum.</span>
+                    <span class="date_time"> <span class="director">happening on :</span> 1 april 2024</span> <span
+                        class="post_like"><span class="like">Like</span> <img class="fire" src="./svgs/solid/fire.svg"
+                            alt=""></span>
+                    <span class="share_button"> <span>copy link</span> <img class="copy_icon" height="20px" width="20px"
+                            src="./svgs/regular/copy.svg" alt="share"></span>
+
+                </div>
+                
+            </div>
+         
+        </div>
+        <div id="articles">
+
+            <div class="article">
+                <img src="./Small boy.jpg" alt="">
+                <span class="article_title">30 Biblical Ways To Raise Godly Children</span>
+                <span class="article_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est
+                    minima, officiis quo </span>
+
+                <div class="article_bottom">
+                    <span class="article_like"><span class="like">Like</span> <img class="fire"
+                            src="./svgs/solid/fire.svg" alt=""></span>
+                    <span class="article_share"><span class="share">Share</span> <img src="./svgs/solid/share-nodes.svg"
+                            alt=""></span>
+                    <span class="article_date"> <img src="./svgs/solid/clock-rotate-left.svg" alt=""> <span
+                            class="date">3 days ago</span> </span>
+                </div>
+            </div>
+        </div>
+        <div id="posts">
+            <div class="post">
+                <img class="post_image" src="./abusa.jpg" alt="post image" srcset="">
+                <div class="post_content">
+
+                    <span class="post_title">easter conference : it is finished</span>
+                    <span class="post_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                        reprehenderit, quibusdam nemo quia eveniet autem repudiandae officia quidem illum blanditiis
+                        provident libero culpa atque quaerat possimus minima. Possimus, animi laborum.</span>
+                    <span class="date_time"> <span class="director">happening on :</span> 1 april 2024</span> <span
+                        class="post_like"><span class="like">Like</span> <img class="fire" src="./svgs/solid/fire.svg"
+                            alt=""></span>
+                    <span class="share_button"> <span>copy link</span> <img class="copy_icon" height="20px" width="20px"
+                            src="./svgs/regular/copy.svg" alt="share"></span>
+
+                </div>
+                
+            </div>
+         
+        </div>
+        <div id="articles">
+
+            <div class="article">
+                <img src="./Small boy.jpg" alt="">
+                <span class="article_title">30 Biblical Ways To Raise Godly Children</span>
+                <span class="article_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est
+                    minima, officiis quo </span>
+
+                <div class="article_bottom">
+                    <span class="article_like"><span class="like">Like</span> <img class="fire"
+                            src="./svgs/solid/fire.svg" alt=""></span>
+                    <span class="article_share"><span class="share">Share</span> <img src="./svgs/solid/share-nodes.svg"
+                            alt=""></span>
+                    <span class="article_date"> <img src="./svgs/solid/clock-rotate-left.svg" alt=""> <span
+                            class="date">3 days ago</span> </span>
+                </div>
+            </div>
+        </div>
+        <div id="posts">
+            <div class="post">
+                <img class="post_image" src="./abusa.jpg" alt="post image" srcset="">
+                <div class="post_content">
+
+                    <span class="post_title">easter conference : it is finished</span>
+                    <span class="post_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                        reprehenderit, quibusdam nemo quia eveniet autem repudiandae officia quidem illum blanditiis
+                        provident libero culpa atque quaerat possimus minima. Possimus, animi laborum.</span>
+                    <span class="date_time"> <span class="director">happening on :</span> 1 april 2024</span> <span
+                        class="post_like"><span class="like">Like</span> <img class="fire" src="./svgs/solid/fire.svg"
+                            alt=""></span>
+                    <span class="share_button"> <span>copy link</span> <img class="copy_icon" height="20px" width="20px"
+                            src="./svgs/regular/copy.svg" alt="share"></span>
+
+                </div>
+                
+            </div>
+         
+        </div>
+        <div id="articles">
+
+            <div class="article">
+                <img src="./Small boy.jpg" alt="">
+                <span class="article_title">30 Biblical Ways To Raise Godly Children</span>
+                <span class="article_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est
+                    minima, officiis quo </span>
+
+                <div class="article_bottom">
+                    <span class="article_like"><span class="like">Like</span> <img class="fire"
+                            src="./svgs/solid/fire.svg" alt=""></span>
+                    <span class="article_share"><span class="share">Share</span> <img src="./svgs/solid/share-nodes.svg"
+                            alt=""></span>
+                    <span class="article_date"> <img src="./svgs/solid/clock-rotate-left.svg" alt=""> <span
+                            class="date">3 days ago</span> </span>
+                </div>
+            </div>
+        </div>
+        <div id="posts">
+            <div class="post">
+                <img class="post_image" src="./abusa.jpg" alt="post image" srcset="">
+                <div class="post_content">
+
+                    <span class="post_title">easter conference : it is finished</span>
+                    <span class="post_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                        reprehenderit, quibusdam nemo quia eveniet autem repudiandae officia quidem illum blanditiis
+                        provident libero culpa atque quaerat possimus minima. Possimus, animi laborum.</span>
+                    <span class="date_time"> <span class="director">happening on :</span> 1 april 2024</span> <span
+                        class="post_like"><span class="like">Like</span> <img class="fire" src="./svgs/solid/fire.svg"
+                            alt=""></span>
+                    <span class="share_button"> <span>copy link</span> <img class="copy_icon" height="20px" width="20px"
+                            src="./svgs/regular/copy.svg" alt="share"></span>
+
+                </div>
+                
+            </div>
+         
+        </div>
+        <div id="articles">
+
+            <div class="article">
+                <img src="./Small boy.jpg" alt="">
+                <span class="article_title">30 Biblical Ways To Raise Godly Children</span>
+                <span class="article_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est
+                    minima, officiis quo </span>
+
+                <div class="article_bottom">
+                    <span class="article_like"><span class="like">Like</span> <img class="fire"
+                            src="./svgs/solid/fire.svg" alt=""></span>
+                    <span class="article_share"><span class="share">Share</span> <img src="./svgs/solid/share-nodes.svg"
+                            alt=""></span>
+                    <span class="article_date"> <img src="./svgs/solid/clock-rotate-left.svg" alt=""> <span
+                            class="date">3 days ago</span> </span>
+                </div>
+            </div>
+        </div>
+        <div id="posts">
+            <div class="post">
+                <img class="post_image" src="./abusa.jpg" alt="post image" srcset="">
+                <div class="post_content">
+
+                    <span class="post_title">easter conference : it is finished</span>
+                    <span class="post_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                        reprehenderit, quibusdam nemo quia eveniet autem repudiandae officia quidem illum blanditiis
+                        provident libero culpa atque quaerat possimus minima. Possimus, animi laborum.</span>
+                    <span class="date_time"> <span class="director">happening on :</span> 1 april 2024</span> <span
+                        class="post_like"><span class="like">Like</span> <img class="fire" src="./svgs/solid/fire.svg"
+                            alt=""></span>
+                    <span class="share_button"> <span>copy link</span> <img class="copy_icon" height="20px" width="20px"
+                            src="./svgs/regular/copy.svg" alt="share"></span>
+
+                </div>
+                
+            </div>
+         
+        </div>
+        <div id="articles">
+
+            <div class="article">
+                <img src="./Small boy.jpg" alt="">
+                <span class="article_title">30 Biblical Ways To Raise Godly Children</span>
+                <span class="article_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est
+                    minima, officiis quo </span>
+
+                <div class="article_bottom">
+                    <span class="article_like"><span class="like">Like</span> <img class="fire"
+                            src="./svgs/solid/fire.svg" alt=""></span>
+                    <span class="article_share"><span class="share">Share</span> <img src="./svgs/solid/share-nodes.svg"
+                            alt=""></span>
+                    <span class="article_date"> <img src="./svgs/solid/clock-rotate-left.svg" alt=""> <span
+                            class="date">3 days ago</span> </span>
+                </div>
+            </div>
+        </div>
+        <div id="posts">
+            <div class="post">
+                <img class="post_image" src="./abusa.jpg" alt="post image" srcset="">
+                <div class="post_content">
+
+                    <span class="post_title">easter conference : it is finished</span>
+                    <span class="post_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                        reprehenderit, quibusdam nemo quia eveniet autem repudiandae officia quidem illum blanditiis
+                        provident libero culpa atque quaerat possimus minima. Possimus, animi laborum.</span>
+                    <span class="date_time"> <span class="director">happening on :</span> 1 april 2024</span> <span
+                        class="post_like"><span class="like">Like</span> <img class="fire" src="./svgs/solid/fire.svg"
+                            alt=""></span>
+                    <span class="share_button"> <span>copy link</span> <img class="copy_icon" height="20px" width="20px"
+                            src="./svgs/regular/copy.svg" alt="share"></span>
+
+                </div>
+                
+            </div>
+         
+        </div>
+        <div id="articles">
+
+            <div class="article">
+                <img src="./Small boy.jpg" alt="">
+                <span class="article_title">30 Biblical Ways To Raise Godly Children</span>
+                <span class="article_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est
+                    minima, officiis quo </span>
+
+                <div class="article_bottom">
+                    <span class="article_like"><span class="like">Like</span> <img class="fire"
+                            src="./svgs/solid/fire.svg" alt=""></span>
+                    <span class="article_share"><span class="share">Share</span> <img src="./svgs/solid/share-nodes.svg"
+                            alt=""></span>
+                    <span class="article_date"> <img src="./svgs/solid/clock-rotate-left.svg" alt=""> <span
+                            class="date">3 days ago</span> </span>
+                </div>
+            </div>
+        </div>
+        <div id="posts">
+            <div class="post">
+                <img class="post_image" src="./abusa.jpg" alt="post image" srcset="">
+                <div class="post_content">
+
+                    <span class="post_title">easter conference : it is finished</span>
+                    <span class="post_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                        reprehenderit, quibusdam nemo quia eveniet autem repudiandae officia quidem illum blanditiis
+                        provident libero culpa atque quaerat possimus minima. Possimus, animi laborum.</span>
+                    <span class="date_time"> <span class="director">happening on :</span> 1 april 2024</span> <span
+                        class="post_like"><span class="like">Like</span> <img class="fire" src="./svgs/solid/fire.svg"
+                            alt=""></span>
+                    <span class="share_button"> <span>copy link</span> <img class="copy_icon" height="20px" width="20px"
+                            src="./svgs/regular/copy.svg" alt="share"></span>
+
+                </div>
+                
+            </div>
+         
+        </div>
+        <div id="articles">
+
+            <div class="article">
+                <img src="./Small boy.jpg" alt="">
+                <span class="article_title">30 Biblical Ways To Raise Godly Children</span>
+                <span class="article_description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est
+                    minima, officiis quo </span>
+
+                <div class="article_bottom">
+                    <span class="article_like"><span class="like">Like</span> <img class="fire"
+                            src="./svgs/solid/fire.svg" alt=""></span>
+                    <span class="article_share"><span class="share">Share</span> <img src="./svgs/solid/share-nodes.svg"
+                            alt=""></span>
+                    <span class="article_date"> <img src="./svgs/solid/clock-rotate-left.svg" alt=""> <span
+                            class="date">3 days ago</span> </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <form id="login_form" class="display_none" action="logconnect.php" method="post">
+        <div id="close_button"> <img src="./svgs/regular/circle-xmark.svg" alt=""> </div>
+        <div id="email_part">
+            <label for="#email"></label> <input id="email" type="email" maxlength="35" placeholder="student email"
+                required>
+
+        </div>
+        <div id="password_part">
+            <label for="#password"></label> <input id="password" type="password" placeholder="password" maxlength="10">
+
+        </div>
+        <div id="form_bottom">
+            <a href="UCCRegister.html"> register ?</a>
+            <input id="submit" type="submit" value="login">
+            <a href="#top" id="forgot_password"> forgot_password?</a>
+        </div>
+
+    </form>
+    <footer id="footer">
+        <div id="topics"><span class="footer_title">Topics <img src="./svgs/solid/paintbrush.svg" alt=""></span>
+            <span class="relateddocuments">Related documents concerning the kingdom of God</span>
+            <span class="relateddocuments">Related documents concerning the kingdom of God</span>
+            <span class="relateddocuments">Related documents concerning the kingdom of God</span>
+        </div>      
+          <div id="get_in_touch"><span class="footer_title">get in touch<img src="./svgs/brands/whatsapp.svg" alt=""></span>
+            <span class="relateddocuments">Related documents concerning the kingdom of God</span>
+            <span class="relateddocuments">Related documents concerning the kingdom of God</span>
+            <span class="relateddocuments">Related documents concerning the kingdom of God</span>
+        </div>   
+             <div id="faq's"><span class="footer_title">faq's <img src="./svgs/solid/question.svg" alt=""></span>
+            <span class="relateddocuments">Related documents concerning the kingdom of God</span>
+            <span class="relateddocuments">Related documents concerning the kingdom of God</span>
+            <span class="relateddocuments">Related documents concerning the kingdom of God</span>
+        </div>
+       
+    </footer>
+</body>
+
+</html>
